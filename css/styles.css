@@ -37,7 +37,7 @@ h1 {
     padding: 1rem 1rem;
 }
 
-h2 {
+h2, h2 span {
     font-size: 3rem;
     font-family: "Croissant One", serif;
     padding: 1rem 1rem;
