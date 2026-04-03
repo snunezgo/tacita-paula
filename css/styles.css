@@ -135,6 +135,10 @@ article div{
     align-items: start;
 }
 
+.links ul li {
+    display: block;
+}
+
 /* Footer */
 footer {
     padding: 32px 24px;
