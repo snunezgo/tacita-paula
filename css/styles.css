@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-family: 'Gelasio', serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    text-align: left;
+    padding: 24px;
+    background-color: #fedbd6;
+}
+
+
+h1 {
+    font-size: 3rem;
+    font-family: "Croissant One", serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem 1rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: "Croissant One", serif;
+    padding: 1rem 1rem;
+}
+
+header a {
+    color: #981013;
+}
+
+header div{
+    display: inline-block;
+}
+
+header img{
+    width: 48px;
+}
+
+
+/* Listas */
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+
+nav ul {
+    font-size: 24px;
+}
+
+ul li {
+    display: inline-block;
+    padding-right: 1rem;
+    padding: 0 1rem;
+}
+
+ul li:last-child{
+    padding-right: 0;
+}
+
+nav ul li a{
+    color: #981013;
+    border: none;
+}
+
+
+nav ul li a:hover{
+    border: none;
+    color: #cb6666;
+}
+
+nav li.selected a{
+    border-bottom: 2px solid #981013;
+}
+
+
+
+/* link */
+a {
+    text-decoration: none;
+}
+
+/* Main */
+main{
+    padding: 2rem;
+    color: #4d3812;
+    flex: 1;
+    text-align: center
+}
+
+h3, h3 a {
+    font-size: 2rem;
+    font-family: "Croissant One", serif;
+}
+main article {
+    padding: 2rem;
+    border: 1px solid;
+    text-align: left;
+    margin: 1rem;
+    display: inline-block;
+    background-color:#fff5f3;
+}
+
+main a {
+    color: #4d3812;
+}
+
+article img {
+    height: 180px;
+}
+
+article div{
+    display: flex;
+    padding: 1rem;
+    align-items: start;
+}
+
+/* Footer */
+footer {
+    padding: 32px 24px;
+    text-align: center;
+    background-color: #a80000;
+}
+
+footer .legal {
+    padding-bottom: 32px;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+footer p, a, span {
+    color: #ffffff;
+}
+
+footer ul {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 600px){
+
+    html{
+        font-size: 13px;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    body{
+        min-width: 300px;
+    }
+
+    header div {
+        display: block;
+    }
+
+    main img{
+        width: 100%;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    ul li {
+        display: block;
+        padding: 0;
+    }
+}
