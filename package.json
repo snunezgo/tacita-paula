@@ -2,11 +2,12 @@
   "name": "la-tacita-de-paula",
   "version": "1.0.0",
   "description": "La tacita de Paula - Cafetería Sin Gluten Sin Lactosa",
-  "source": "index.html",
+  "source": "/src/index.html",
   "browserslist": {
     "production": [
       "defaults",
-      "IE 11"
+      "IE 11",
+      "last 10 years"
     ],
     "development": [
       "last 1 Chrome version",
@@ -31,11 +32,14 @@
     "build": "npm-run-all clean parcel:build"
   },
   "devDependencies": {
+    "@parcel/optimizer-image": "^2.16.4",
+    "@parcel/transformer-image": "^2.16.4",
     "@types/leaflet": "^1.9.21",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.16.4",
     "posthtml-include": "^2.0.1",
-    "rimraf": "^6.1.3"
+    "rimraf": "^6.1.3",
+    "sharp": "^0.33.5"
   },
   "dependencies": {
     "core-js": "^3.49.0",

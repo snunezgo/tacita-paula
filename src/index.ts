@@ -1,6 +1,5 @@
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
-import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
 
 if (document.getElementById('mapa1')) {

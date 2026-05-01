@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La tacita de Paula</title>
+    <meta name="description" content="Cafetería Sin Gluten Sin Lactosa">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/genfavicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/genfavicon-16.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/images/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon-180x180.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="./index.html">
+                <h1>La tacita de Paula</h1>
+            </a>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li class="selected"><a href="./index.html">Inicio</a></li>
+                    <li><a href="./categoria/index.html">Cafeterías</a></li>
+                    <li><a href="./categoria2/index.html">Menú</a></li>
+                    <li><a href="./links/index.html">Enlaces</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="animacio"></div>
+        <div>
+            <h2>Pequeños placeres, grandes sabores</h2>
+        </div>
+        <div>
+            <picture>
+                <source type="image/webp" 
+                srcset="./assets/images/portada.jpg?width=300&as=webp&quality=80 300w,
+                ./assets/images/portada.jpg?width=800&as=webp&quality=80 800w,
+                ./assets/images/portada.jpg?width=1200&as=webp&quality=80 1200w"
+                sizes="(max-width: 600px) 100vw,
+                (max-width: 1200px) 50vw,
+                800px">
+                <img src="./assets/images/portada.jpg?width=800"
+                srcset="./assets/images/portada.jpg?width=300 300w,
+                ./assets/images/portada.jpg?width=800 800w,
+                ./assets/images/portada.jpg?width=1200 1200w" 
+                sizes="(max-width: 600px)100vw,
+                (max-width: 1200px) 50vw,
+                800px"
+                alt="Menu" class="clip">
+            </picture>
+        </div>
+    </main>
+    <include src="./src/footer.html"></include>
+    <script type="module" src="./index.ts"></script>
+</body>
+
+</html>

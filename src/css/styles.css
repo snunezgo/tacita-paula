@@ -1,3 +1,5 @@
+@import url('../../node_modules/leaflet/dist/leaflet.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -41,6 +43,7 @@ h2, h2 span {
     font-size: 3rem;
     font-family: "Croissant One", serif;
     padding: 1rem 1rem;
+    color: #4d3812;
 }
 
 header a {
@@ -50,11 +53,6 @@ header a {
 header div{
     display: inline-block;
 }
-
-header img{
-    width: 48px;
-}
-
 
 /* Listas */
 
@@ -81,12 +79,14 @@ ul li:last-child{
 nav ul li a{
     color: #981013;
     border: none;
+    transition: color 1s ease;
 }
 
 
 nav ul li a:hover{
     border: none;
     color: #cb6666;
+    transition-duration: 0.3s;
 }
 
 nav li.selected a{
@@ -112,27 +112,87 @@ h3, h3 a {
     font-size: 2rem;
     font-family: "Croissant One", serif;
 }
-main article {
-    padding: 2rem;
+
+.contenedor {
+    display: flex;
+    align-items: stretch;
+    gap: 1 rem;
+    flex-wrap: wrap;
+}
+.slogan {
+    padding: 1rem;
     border: 1px solid;
-    text-align: left;
-    margin: 1rem;
-    display: inline-block;
-    background-color:#fff5f3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color:#fff;
+    flex: 1;
+    min-width: 300px;
+    width: 30%;
+    margin: 0.5rem;
+}
+
+.video {
+    position: relative;
+    padding: 1 rem;
+    overflow: hidden;
+}
+
+.video iframe {
+    top: 0;
+    left: 0;
+    width: 60%;
+}
+
+
+.slogan h3 {
+    font-size: 1.5rem;
+    display: block; margin: 0 auto;
+}
+
+.slogan p {
+    display: block; margin: 0 auto;
 }
 
 main a {
     color: #4d3812;
 }
 
-article img {
-    height: 180px;
+.slogan img {
+    object-fit: contain;
 }
 
-article div{
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.lugar {
+    height: auto;
+    width: 30%;
+    min-width: 300px;
+}
+
+.ubicacion {
+    height: 50%;
+    width: 50%;
+    min-width: 300px;
+    min-height: 300px;
+    display: block; margin: 0 auto;
+}
+
+.salto {
+    padding-bottom: 32px;
+}
+
+
+.slogan div{
     display: flex;
-    padding: 1rem;
-    align-items: start;
+    flex-direction: row;
+    padding: 0.5rem;
+    justify-content: center;
 }
 
 .links ul li {
@@ -152,12 +212,33 @@ footer .legal {
     color: #ffffff;
 }
 
-footer p, a, span {
+footer p, a {
     color: #ffffff;
 }
 
 footer ul {
     font-size: 1.5rem;
+}
+
+.animacio {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: caida 5s infinite;
+    background-image: url("../assets/images/leaves.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block; margin: 0 auto;
+}
+
+@keyframes caida {
+    from {left: -30vw;}
+    to {left: 30vw;}
+}
+
+.clip {
+    clip-path: polygon(0% 0%, 33% 0%, 33% 25%, 66% 25%, 66% 0%, 100% 0%, 100% 25%, 66% 25%, 66% 50%, 100% 50%, 100% 75%, 66% 75%, 66% 100%, 33% 100%, 33% 75%, 0% 75%, 0% 50%, 33% 50%,33% 75%, 66% 75%,66% 50%, 33% 50%, 33% 25%, 0% 25%);
 }
 
 @media (max-width: 600px){
@@ -166,7 +247,7 @@ footer ul {
         font-size: 13px;
     }
 
-    h2{
+    h2, h2 span{
         font-size: 2rem;
     }
 
@@ -178,9 +259,9 @@ footer ul {
         display: block;
     }
 
-    main img{
-        width: 100%;
-    }
+    .salto {
+    padding-bottom: 24px;
+}
 
     header{
         text-align: center;
@@ -190,4 +271,6 @@ footer ul {
         display: block;
         padding: 0;
     }
+
+
 }
