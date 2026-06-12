@@ -142,23 +142,11 @@
             <p><b>Ubicación:</b> Plaza Cataluña X, Barcelona</p><br>
             <div id="mapa2" class="ubicacion"></div>
         </div>
-        <script>
-  if ('loading' in HTMLImageElement.prototype) {
-    const images = document.querySelectorAll('img[loading="lazy"]');
-    images.forEach(img => {
-      img.src = img.dataset.src;
-    });
-  } else {
-    // Dynamically import the LazySizes library
-    const script = document.createElement('script');
-    script.src =
-      'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js';
-    document.body.appendChild(script);
-  }
-</script>
+
     </main>
 </body>
 <include src="./src/footer.html"></include>
 <script type="module" src="../index.ts"></script>
+<script type="text/javascript" src="lazy_loading_lib.bundle.js"></script>
 
 </html>
